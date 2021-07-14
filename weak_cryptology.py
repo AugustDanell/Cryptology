@@ -18,5 +18,16 @@ def ceasar(secret_key, plaintext, op = "ENCRYPT"):
 
     return encrypted_text
 
-def affine_cypher():
+def vigenere_cypher(secret_key, plaintext, op = "ENCRYPT"):
+    index = 0
+    roof = len(secret_key)
+    crypto_list = []
+    for i in plaintext:
+        crypto_list.append(ceasar(secret_key[index], i, op))
+        index += 1
+        index %= roof
+
+    return "".join(crypto_list)
+
+def affine_cypher(key_a, key_b):
     pass
