@@ -1,7 +1,9 @@
 from weak_cryptology import ceasar
 
 ''' ceasar_brute_force_attack
-    Naturally the Ceasar cipher is not very powerful simply because it can easily be brute forced, that is we try to crack it by systematically iterate through all possible keys. The Ceasar cipher uses the 26 letters of the alphabet and so what we can do is iterate through every possible key and test it. 
+    Naturally the Ceasar cipher is not very powerful simply because it can easily be brute forced, that is we try to crack it by systematically iterate through all possible keys.
+    The Ceasar cipher uses the 26 letters of the alphabet and so what we can do is iterate through every possible key and test each key, worst case scenario we have to test 26 different
+    keys which is not too much. 
 '''
 
 def ceasar_brute_force_attack(cryptotext):
