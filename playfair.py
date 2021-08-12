@@ -11,6 +11,12 @@ def split_into_pairs(l):
 
     return new_list
 
+def transform_digraphs(digraph_list):
+    made_transform = False
+    # rule 1:
+    
+
+    return made_transform
 
 # 1. Initiate a table:
 occured_letters = {}
@@ -35,5 +41,8 @@ for i in range(26):
 
 # 3. Encryption:
 plain_text = list(input().replace(" ", ""))
-print(split_into_pairs(plain_text))
+digraph_list = split_into_pairs(plain_text)
+
+while(transform_digraphs(digraph_list)):
+    pass
 
