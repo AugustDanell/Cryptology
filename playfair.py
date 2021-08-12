@@ -1,6 +1,17 @@
 def split_into_group_of_five(l):
     return [l[0:5],l[5:10],l[10:15],l[15:20], l[20:]]
 
+def split_into_pairs(l):
+    new_list = []
+    for i in range(1, len(l), 2):
+        new_list.append(l[i-1:i+1])
+
+    if(len(l) % 2 == 1):
+        new_list.append([l[-1]])
+
+    return new_list
+
+
 # 1. Initiate a table:
 occured_letters = {}
 table = []
@@ -23,4 +34,6 @@ for i in range(26):
 # ok! --> print(split_into_group_of_five(table))
 
 # 3. Encryption:
-plain_text = list(input())
+plain_text = list(input().replace(" ", ""))
+print(split_into_pairs(plain_text))
+
