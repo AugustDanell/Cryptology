@@ -1,1 +1,4 @@
 # Cryptology
+Cryptology is, in a nutshell, the idea of establishing safe communication and its uses go back to antiquiety and maybe even further. The ceasar cipher is one very basic substitution cipher meaning that we substitute each letter according to some table. In the ceasar cipher we add a number for each letter, rolling over to the first letter. The number we choose to use as a form of shifting like this is what is called a key, it is called a key because if our reciveving partner knows the number he, or she, can then subsequently subtract the same number to decipher the message. Naturally this is much safer than leaving the plaintext as it is when in an armed conflict. 
+
+Today cryptology in a practical sense is obviously much more advanced than the ceasar cipher but it builds on the same principle. In this repo I will implement some of the weaker cryptological stanards as well as more advanced and more practically used today standards like the AES and DES.  
